@@ -1,4 +1,5 @@
 JavaRange
 =========
+Java experiments project. Just for testing some behaviours of Java.
 
-Java experiments
+jr.experiments.core - module for Java core cases
