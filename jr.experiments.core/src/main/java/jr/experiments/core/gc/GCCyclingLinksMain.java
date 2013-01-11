@@ -37,7 +37,7 @@ public class GCCyclingLinksMain {
 		try {
 			LOGGER.log(Level.TRACE, "Call GC");
 			System.gc();
-			LOGGER.log(Level.TRACE, "Sleep for 5 sec.");
+			LOGGER.log(Level.TRACE, String.format("Sleep for %3.1f sec.", DELAY / 1000.));
 			Thread.sleep(DELAY);
 			LOGGER.log(Level.DEBUG, "Memory: " + (runtime.totalMemory() + runtime.freeMemory()));
 		} catch (InterruptedException e) {
